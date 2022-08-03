@@ -102,7 +102,7 @@ public class Dao {
 		entityManager.getTransaction().begin();
 
 		Employee student = entityManager.find(Employee.class, 1);
-		entityManager.remove(student);
+		entityManager.remove(Employee);
 		entityManager.getTransaction().commit();
 		entityManager.close();
 	}
